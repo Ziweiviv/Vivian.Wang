@@ -24,7 +24,6 @@ section, .container {
 <body>
 
 <!-- Navbar -->
-<!-- Navbar with section links -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container">
     <a class="navbar-brand" href="#">Vivian Wang</a>
@@ -34,21 +33,22 @@ section, .container {
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-     <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="#community-board">Community Board</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#why-standing">Why I'm Standing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#values">My Values</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#policy">Policy</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#youth">Why Youth</a>
-        </li>
-           
-                <li class="nav-item">
           <a class="nav-link" href="#key-dates">Key Dates</a>
         </li>
         <li class="nav-item">
@@ -58,6 +58,23 @@ section, .container {
     </div>
   </div>
 </nav>
+
+<style>
+  html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+
+  /* Sticky navbar offset for sections */
+  section, .container {
+    scroll-margin-top: 70px; /* same as navbar height */
+  }
+
+  /* Optional: highlight active link while scrolling */
+  .navbar-nav .nav-link.active {
+    font-weight: 600;
+    color: #f8f9fa;
+  }
+</style>
 
 
 <!-- Hero Banner -->
@@ -83,34 +100,59 @@ section, .container {
 
 <!-- About Me -->
 <div class="container my-5" id="about">
+
   <h2>About Me</h2>
+
+  <p>Kia ora! I’m <strong>Vivian Wang</strong>, a mother of two, passionate about building strong, inclusive communities in Christchurch Central. I live every day to the fullest. Professionally, I work in the tertiary education sector and also run fitness classes as an instructor. On top of that, I volunteer by hosting a radio show and contributing to other community initiatives.</p>
+
+  <p>As a student, I was highly active in governance as an exec and founded an award-winning student society. Now that I’ve moved on from student life, I’m running for the Community Board—not because I think I deserve this opportunity more than anyone else, but because I believe we need people like me on the board: someone younger, still learning, full of potential, and ready to make the most of this opportunity.</p>
+
+  <p>If selected, I plan to serve a maximum of one term, dedicating my time to supporting the next generation of candidates under 30. My experiences have shown me the power of people working together for positive change. I believe in practical solutions, open conversations, and creating opportunities for everyone. These experiences guide my priorities: safer streets, better infrastructure, and community spaces that support families, young professionals, and pet owners.</p>
+</div>
+<!-- Why I'm Standing -->
+<div class="container my-5" id="why-standing">
+  <h2>Why I'm Standing</h2>
   <p>
-    Kia ora, I’m <strong>Vivian Wang</strong> — passionate about building strong, inclusive communities in Christchurch Central.  
-    My background as an educator, mentor, and community organiser has shown me the power of people working together for positive change.  
-    I believe in practical solutions, open conversations, and creating opportunities for everyone.
+    Central Ward is a vibrant and youthful community, with a median age of <strong>33.3 years</strong>, notably younger than the citywide median of 37.5 years. Yet, the current community board's average age exceeds 50, highlighting a significant underrepresentation of younger voices in local decision-making.
+  </p>
+  <p>
+    Many younger residents—students, young professionals, and emerging community leaders—are not fully represented in shaping our neighbourhood's future. Youth bring <strong>fresh ideas, adaptability, and a keen understanding of contemporary challenges</strong>, making their involvement crucial for a balanced and forward-thinking board.
+  </p>
+  <p>
+    As a young Asian New Zealander, I bring <strong>resourcefulness, practical problem-solving, and effective communication</strong> to connect with a diverse community and approach challenges efficiently.
+  </p>
+  <p>
+    I am standing to ensure that the perspectives of younger residents are genuinely heard and considered, creating a more inclusive, dynamic, and forward-looking community board.
   </p>
 </div>
 
-<!-- Policy -->
-<div class="container my-5">
-  <h2>My Policy</h2>
+
+
+
+<!-- Values -->
+<div class="container my-5" id="values">
+  <h2>My Values</h2>
   <ul class="list-group">
-    <li class="list-group-item">Champion youth voices in decision-making</li>
-    <li class="list-group-item">Strengthen community wellbeing and safety</li>
-    <li class="list-group-item">Promote accessible and sustainable city initiatives</li>
-    <li class="list-group-item">Support local businesses and creative opportunities</li>
+    <li class="list-group-item"><strong>Whakapapa:</strong> Honouring the connections and relationships that shape our community and guide who I am.</li>
+    <li class="list-group-item"><strong>Manaakitanga:</strong> Caring for and supporting others with respect and kindness, creating an environment where everyone feels valued and welcomed.</li>
+    <li class="list-group-item"><strong>Kaitiakitanga:</strong> Taking responsibility for protecting and nurturing our environment and resources, promoting sustainability and thoughtful stewardship.</li>
   </ul>
 </div>
 
-<!-- Why Youth -->
-<div class="container my-5">
-  <h2>Why Youth for Central Ward?</h2>
-  <p>
-    Christchurch Central deserves fresh energy and future-focused ideas.  
-    Young people understand the challenges of today — from housing to climate action to building connected communities.  
-    As a youth candidate, I want to bring those voices to the table, ensuring Central Ward grows into a place where all generations can thrive.
-  </p>
+
+<!-- Policy -->
+<div class="container my-5" id="policy">
+  <h2>My Priorities</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Make sure young people and families are heard and supported in local decisions</li>
+    <li class="list-group-item">Improve safety and accessibility in our streets and neighbourhoods</li>
+    <li class="list-group-item">Create welcoming, safe spaces for children, pets, and the community</li>
+    <li class="list-group-item">Support better local infrastructure to meet community needs</li>
+    <li class="list-group-item">Support local businesses and community initiatives</li>
+    <li class="list-group-item">Promote practical, sustainable, and transparent decision-making</li>
+  </ul>
 </div>
+
 
 <!-- Key Election Dates -->
 <div class="container my-5" id="key-dates">
@@ -234,17 +276,17 @@ section, .container {
 
   <p class="mt-4 text-center">
     Make sure you’re enrolled to vote so your voice is heard in shaping the future of Christchurch Central.  
-    <a href="https://vote.nz/enrolling/enrol-or-update/enrol-or-update-online/" target="_blank">Check your enrolment status here.</a>
+    <a href="https://vote.nz/enrolling/enrol-or-update/enrol-or-update-online/" target="_blank">Enrol, update, or check your enrolment status here</a>
   </p>
 
   <p class="text-center fst-italic mt-2">
-    Note: You can still enrol after voting starts, but you will vote using a <strong>special vote</strong> process.
+    Note: You can still enrol after voting starts, by using a <strong>special vote</strong> process.
   </p>
 </div>
 <!-- Call to Action -->
 <div class="container text-center my-5">
   <h3>Get Involved</h3>
-  <p>Join the movement and support youth leadership in Christchurch Central.</p>
+  <p>Join the movement and support youth involvement in Christchurch Central.</p>
   <a href="mailto:vivianwangchch@gmail.com" class="btn btn-lg btn-primary">Contact Vivian</a>
 </div>
 
