@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Vivian Wang | Christchurch Central Community Board</title>
+  <title>Vivian Wang | Christchurch Central Ward Community Board</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -14,20 +14,51 @@
       height: auto;      
       display: block;    
     }
+    /* Adjust for sticky navbar */
+section, .container {
+  scroll-margin-top: 70px; /* height of navbar */
+}
+
   </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- Navbar with section links -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container">
     <a class="navbar-brand" href="#">Vivian Wang</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+     <li class="nav-item">
+          <a class="nav-link" href="#community-board">Community Board</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#policy">Policy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#youth">Why Youth</a>
+        </li>
+           
+                <li class="nav-item">
+          <a class="nav-link" href="#key-dates">Key Dates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#get-involved">Get Involved</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
+
 
 <!-- Hero Banner -->
 <section class="banner">
@@ -36,16 +67,51 @@
 
 <!-- About the Community Board -->
 <div class="container my-5" id="community-board">
-  <h2>What is the Christchurch Central Community Board?</h2>
+  <h2>What is the Christchurch Central Ward Community Board?</h2>
+  
+  <p>Christchurch is split into <strong>16 wards</strong>, each represented by a city councillor. There are also <strong>six community boards</strong> that focus on local issues and give residents a voice in decisions affecting their neighborhoods. The <strong>Central Ward</strong> is part of the <strong>Waipapa Papanui-Innes-Central Community Board</strong>, which also covers the Papanui and Innes Wards.</p>
+
+  <p>Community boards represent local residents and provide advice to the city council. They help with decisions on things like parks, streets, and community projects. <strong>This isn’t a leadership or councillor role—community board members focus on local representation and advice, not city-wide laws.</strong></p>
+
+  <p>Your voice matters— learn how the community board works!</p>
+
+  <p><a href="https://ccc.govt.nz/the-council/how-the-council-works/elected-members/community-boards" target="_blank">Learn more here</a></p>
+</div>
+
+
+
+
+<!-- About Me -->
+<div class="container my-5" id="about">
+  <h2>About Me</h2>
   <p>
-    Community Boards are the link between Christchurch residents and the Christchurch City Council.  
-    They provide a voice for local communities, advocate for neighbourhood needs, and help shape decisions that affect daily life.  
-    The <strong>Christchurch Central Community Board</strong> focuses on ensuring our central city and surrounding suburbs are vibrant, safe, and inclusive places to live, work, and connect.
+    Kia ora, I’m <strong>Vivian Wang</strong> — passionate about building strong, inclusive communities in Christchurch Central.  
+    My background as an educator, mentor, and community organiser has shown me the power of people working together for positive change.  
+    I believe in practical solutions, open conversations, and creating opportunities for everyone.
   </p>
 </div>
 
-<!-- Key Dates -->
-<!-- Key Election Dates -->
+<!-- Policy -->
+<div class="container my-5">
+  <h2>My Policy</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Champion youth voices in decision-making</li>
+    <li class="list-group-item">Strengthen community wellbeing and safety</li>
+    <li class="list-group-item">Promote accessible and sustainable city initiatives</li>
+    <li class="list-group-item">Support local businesses and creative opportunities</li>
+  </ul>
+</div>
+
+<!-- Why Youth -->
+<div class="container my-5">
+  <h2>Why Youth for Central Ward?</h2>
+  <p>
+    Christchurch Central deserves fresh energy and future-focused ideas.  
+    Young people understand the challenges of today — from housing to climate action to building connected communities.  
+    As a youth candidate, I want to bring those voices to the table, ensuring Central Ward grows into a place where all generations can thrive.
+  </p>
+</div>
+
 <!-- Key Election Dates -->
 <div class="container my-5" id="key-dates">
   <h2 class="mb-5 text-center">Key Election Dates</h2>
@@ -182,39 +248,6 @@
     Note: You can still enrol after voting starts, but you will vote using a <strong>special vote</strong> process.
   </p>
 </div>
-
-
-<!-- About Me -->
-<div class="container my-5" id="about">
-  <h2>About Me</h2>
-  <p>
-    Kia ora, I’m <strong>Vivian Wang</strong> — passionate about building strong, inclusive communities in Christchurch Central.  
-    My background as an educator, mentor, and community organiser has shown me the power of people working together for positive change.  
-    I believe in practical solutions, open conversations, and creating opportunities for everyone.
-  </p>
-</div>
-
-<!-- Policy -->
-<div class="container my-5">
-  <h2>My Policy</h2>
-  <ul class="list-group">
-    <li class="list-group-item">Champion youth voices in decision-making</li>
-    <li class="list-group-item">Strengthen community wellbeing and safety</li>
-    <li class="list-group-item">Promote accessible and sustainable city initiatives</li>
-    <li class="list-group-item">Support local businesses and creative opportunities</li>
-  </ul>
-</div>
-
-<!-- Why Youth -->
-<div class="container my-5">
-  <h2>Why Youth for Central Ward?</h2>
-  <p>
-    Christchurch Central deserves fresh energy and future-focused ideas.  
-    Young people understand the challenges of today — from housing to climate action to building connected communities.  
-    As a youth candidate, I want to bring those voices to the table, ensuring Central Ward grows into a place where all generations can thrive.
-  </p>
-</div>
-
 <!-- Call to Action -->
 <div class="container text-center my-5">
   <h3>Get Involved</h3>
