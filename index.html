@@ -45,18 +45,144 @@
 </div>
 
 <!-- Key Dates -->
+<!-- Key Election Dates -->
+<!-- Key Election Dates -->
 <div class="container my-5" id="key-dates">
-  <h2>Key Election Dates</h2>
-  <ul class="list-group">
-    <li class="list-group-item"><strong>Enrolment closes:</strong> 1</li>
-    <li class="list-group-item"><strong>Voting opens:</strong> 1</li>
-    <li class="list-group-item"><strong>Election Day:</strong> 1</li>
-  </ul>
-  <p class="mt-3">
+  <h2 class="mb-5 text-center">Key Election Dates</h2>
+  <div class="row g-4">
+
+    <!-- Example Card: Add class "past-event" if date has passed -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm key-date-card past-event">
+        <div class="card-body text-center">
+          <h5 class="card-title">Thu 5 Jun 2025</h5>
+          <p class="card-text">Candidate information session held at Tūranga</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm key-date-card past-event">
+        <div class="card-body text-center">
+          <h5 class="card-title">Fri 4 Jul 2025</h5>
+          <p class="card-text">Candidate nominations open & electoral roll opens for inspection</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm key-date-card past-event">
+        <div class="card-body text-center">
+          <h5 class="card-title">Fri 1 Aug 2025</h5>
+          <p class="card-text">Candidate nominations close at noon & electoral roll closes</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm key-date-card past-event">
+        <div class="card-body text-center">
+          <h5 class="card-title">By Fri 8 Aug 2025</h5>
+          <p class="card-text">Public notice of election day and candidates</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm key-date-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Tue 9 Sep 2025</h5>
+          <p class="card-text">Voting opens</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm key-date-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Tue 9 Sep – 22 Sep 2025</h5>
+          <p class="card-text">Delivery of voting documents</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm key-date-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Sat 11 Oct 2025</h5>
+          <p class="card-text">Election day, voting closes at noon</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 shadow-sm key-date-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">By 19 Oct 2025</h5>
+          <p class="card-text">Declaration of results</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="mt-4 text-center">
     Make sure you’re enrolled to vote so your voice is heard in shaping the future of Christchurch Central.  
     <a href="https://vote.nz" target="_blank">Check your enrolment status here.</a>
   </p>
+
+  <p class="text-center fst-italic mt-2">
+    Note: You can still enrol after voting starts, but you will vote using a <strong>special vote</strong> process.
+  </p>
 </div>
+
+<!-- Styling -->
+<style>
+  /* Card hover effect */
+  .key-date-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+  }
+
+  .key-date-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+  }
+
+  /* Past events styling */
+  .key-date-card.past-event {
+    background-color: #e0e0e0;
+    color: #555;
+  }
+
+  /* Consistent card height */
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+</style>
+
+
+  <p class="mt-4 text-center">
+    Make sure you’re enrolled to vote so your voice is heard in shaping the future of Christchurch Central.  
+    <a href="https://vote.nz" target="_blank">Check your enrolment status here.</a>
+  </p>
+
+  <p class="text-center fst-italic mt-2">
+    Note: You can still enrol after voting starts, but you will vote using a <strong>special vote</strong> process.
+  </p>
+</div>
+
 
 <!-- About Me -->
 <div class="container my-5" id="about">
