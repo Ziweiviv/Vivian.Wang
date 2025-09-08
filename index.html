@@ -558,6 +558,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 </script>
+<script>
+document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    var targetId = this.getAttribute('href').substring(1);
+    var target = document.getElementById(targetId);
+    var navHeight = document.querySelector('.navbar').offsetHeight;
+    window.scrollTo({
+      top: target.offsetTop - navHeight,
+      behavior: 'smooth'
+    });
+
+    // Collapse navbar on mobile
+    var navbarCollapse = document.querySelector('.navbar-collapse');
+    if (navbarCollapse.classList.contains('show')) {
+      $('.navbar-collapse').collapse('hide');
+    }
+  });
+});
+</script>
+
 
 
 <!-- Footer -->
