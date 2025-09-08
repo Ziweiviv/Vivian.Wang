@@ -1,0 +1,8 @@
+# Allow all crawlers
+User-agent: *
+
+# Sitemap location
+Sitemap: https://vivianwang.site/sitemap.xml
+
+# Optional: allow all pages
+Disallow:
