@@ -38,6 +38,13 @@
       height: auto;      
       display: block;    
     }
+    #aboutCarousel .carousel-item img {
+  width: 100%;        /* full width */
+  aspect-ratio: 1/1;  /* forces square shape */
+  object-fit: cover;  /* crop to fill square */
+  border-radius: 0.5rem; /* optional, keep your rounded corners */
+}
+
     /* Adjust for sticky navbar */
 section, .container {
   scroll-margin-top: 70px; /* height of navbar */
