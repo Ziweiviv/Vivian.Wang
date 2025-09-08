@@ -545,6 +545,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   observer.observe(carousel);
 });
+
+</script>
+<script>
+  // Collapse navbar on link click (for mobile)
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+    link.addEventListener('click', function() {
+      var navbarCollapse = document.querySelector('.navbar-collapse');
+      if (navbarCollapse.classList.contains('show')) {
+        $('.navbar-collapse').collapse('hide'); // Bootstrap jQuery method
+      }
+    });
+  });
 </script>
 
 
