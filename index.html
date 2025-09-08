@@ -64,6 +64,12 @@ section, .container {
     scroll-behavior: smooth; /* Smooth scrolling */
   }
 
+  #aboutCarousel .carousel-item img {
+    height: 500px;       /* set a consistent height */
+    object-fit: cover;   /* crop to fill without distortion */
+  }
+
+
   /* Sticky navbar offset for sections */
   section, .container {
     scroll-margin-top: 70px; /* same as navbar height */
@@ -438,17 +444,6 @@ section, .container {
     </a>
   </div>
 
-  <!-- Instagram Reel -->
-  <div class="card border-0 shadow-lg mx-auto mb-4" style="max-width: 540px; border-radius: 1rem; overflow: hidden;">
-    <div class="card-body p-0">
-      <blockquote class="instagram-media" 
-        data-instgrm-captioned 
-        data-instgrm-permalink="https://www.instagram.com/reel/DOR4B4OE7E2/?utm_source=ig_embed&amp;utm_campaign=loading" 
-        data-instgrm-version="14" 
-        style=" background:#FFF; border:0; border-radius:0; box-shadow:0 0 1px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.1); margin:0 auto; max-width:540px; min-width:326px; padding:0; width:100%;">
-      </blockquote>
-    </div>
-  </div>
 
   <!-- Facebook Video -->
   <div class="mx-auto" style="max-width: 300px; margin-top:20px;">
@@ -503,6 +498,30 @@ section, .container {
 <!-- Instagram embed script -->
 <script async src="//www.instagram.com/embed.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var carousel = document.querySelector("#aboutCarousel");
+
+  // Bootstrap carousel instance
+  var bsCarousel = $(carousel).carousel({
+    interval: 3000,  // 3s auto-slide
+    pause: false
+  });
+
+  // Observer to watch visibility
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        $(carousel).carousel('cycle');   // resume
+      } else {
+        $(carousel).carousel('pause');   // pause
+      }
+    });
+  }, { threshold: 0.3 }); // 30% visible is enough
+
+  observer.observe(carousel);
+});
+</script>
 
 
 <!-- Footer -->
