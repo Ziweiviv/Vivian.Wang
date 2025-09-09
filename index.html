@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
   <title>Vivian Wang | Christchurch Central Ward Community Board Candidate</title>
-
+  
   <!-- SEO Meta -->
   <meta name="description" content="Vivian Wang – Independent candidate for Christchurch Central Ward and Central Ward Community Board. Committed to strong local representation, connecting with the community, and supporting future leaders.">
   <meta name="keywords" content="Vivian Wang, Christchurch Central Ward, Central Ward, community board candidate, independent candidate Christchurch, local elections NZ 2025, Vivian Wang Central Ward, Christchurch Central Vivian Wang">
   <meta name="author" content="Vivian Wang">
   <link rel="canonical" href="https://vivianwang.site/">
+  
   <!-- Favicon -->
-<link rel="icon" type="image/png" href="https://vivianwang.site/viv.jpg" />
-
+  <link rel="icon" type="image/png" href="https://vivianwang.site/viv.jpg">
 
   <!-- Open Graph (Facebook, LinkedIn) -->
   <meta property="og:title" content="Vivian Wang | Christchurch Central Ward Community Board Candidate">
@@ -30,29 +31,43 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
+  
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+  
   <style>
+    html { scroll-behavior: smooth; }
+
     /* Flat banner */
-    .banner img {
-      width: 100%;       
-      height: auto;      
-      display: block;    
+    .banner img { width: 100%; height: auto; display: block; }
+
+    /* Carousel images */
+    #aboutCarousel .carousel-item img { 
+      width: 100%; 
+      height: 500px; 
+      object-fit: cover; 
+      border-radius: 0.5rem; 
     }
-    #aboutCarousel .carousel-item img {
-  width: 100%;        /* full width */
-  aspect-ratio: 1/1;  /* forces square shape */
-  object-fit: cover;  /* crop to fill square */
-  border-radius: 0.5rem; /* optional, keep your rounded corners */
-}
 
-    /* Adjust for sticky navbar */
-section, .container {
-  scroll-margin-top: 70px; /* height of navbar */
-}
+    /* Sticky navbar offset for sections */
+    section, .container { scroll-margin-top: 70px; }
 
+    /* Key dates cards hover */
+    .key-date-card { transition: transform 0.3s, box-shadow 0.3s; border-radius: 10px; }
+    .key-date-card:hover { transform: translateY(-8px); box-shadow: 0 12px 20px rgba(0,0,0,0.25); }
+    .key-date-card.past-event { background-color: #e0e0e0; color: #555; }
+
+    /* Buttons */
+    .btn-facebook { background-color: #1877f2; color: #fff; border-radius: 50px; }
+    .btn-facebook:hover { background-color: #145dbf; }
+    .btn-instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); color: #fff; border-radius: 50px; }
+    .btn-instagram:hover { opacity: 0.9; }
+    .btn-email { background-color: #333; color: #fff; border-radius: 50px; }
+    .btn-email:hover { background-color: #000; }
+    .btn i { margin-right: 8px; font-size: 1.1rem; }
   </style>
 </head>
 <body>
